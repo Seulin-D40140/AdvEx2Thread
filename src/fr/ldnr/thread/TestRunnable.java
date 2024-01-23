@@ -19,8 +19,8 @@ public class TestRunnable implements Runnable
 	{
 		Thread thread = new Thread(new TestRunnable());
 		thread.start();
-		int ascii = 33;
-		String asscii = Character.toString((char) ascii);
+//		int ascii = 33;
+//		String asscii = Character.toString((char) ascii);
 		//System.out.println(asscii);
 	}
 }
