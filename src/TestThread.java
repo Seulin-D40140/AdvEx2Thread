@@ -1,4 +1,3 @@
-package fr.ldnr.thread;
 
 public class TestThread extends Thread
 {
@@ -14,7 +13,7 @@ public class TestThread extends Thread
 			System.out.print(this.getName());
 			if(i == 4)
 			{
-				System.out.println(this.getName());
+				System.out.println();
 			}
 		}
 	}
