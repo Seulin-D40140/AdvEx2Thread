@@ -7,29 +7,30 @@ public class ThreadTime
 	
   public static void main(String[] args) 
   {
-    
     Thread thread = new Thread(new MonRunnable(1000));
+    
 //    DateFormat df = new SimpleDateFormat("HH:mm:ss"); 
 //    System.out.println(df.format(new Date()));
-    
     thread.start();
   }
 
   private static class MonRunnable implements Runnable 
   {
-	
+	DateFormat df = new SimpleDateFormat("HH:mm:ss");
     private long delai;
     
     public MonRunnable(long delai) 
     {
       this.delai = delai;
-      
     }
 
     @Override
     public void run() 
     { 	
-    	DateFormat df = new SimpleDateFormat("HH:mm:ss");
+    	for ( int i = 0 ; i<10 ; i++)
+        {
+        	System.out.println();
+        }
     	while(true) 
     	{
 	      try 
@@ -43,5 +44,6 @@ public class ThreadTime
 	      }
     	}
     }
+    
   }
 }
